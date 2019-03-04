@@ -15,7 +15,7 @@ do
 		if [[ "$response" =~ ^([yY][eE][sS]|[yY])+$ ]]
 		then
 			# lets download dropbox
-			if [! -d .cache/.dropbox-dist]
+			if [ ! -d .cache/.dropbox-dist ]
 			then
 				mkdir .cache
 				cd .cache
@@ -23,7 +23,7 @@ do
 				cd ..
 			fi
 			# copy the dropbox distribution into the directories
-			cp -r .cacehe/.dropbox-dist $dir
+			cp -r .cache/.dropbox-dist $dir
 		else
 		   echo "the folder $dir will be ignored"
 		fi
