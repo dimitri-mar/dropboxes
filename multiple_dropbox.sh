@@ -8,15 +8,7 @@ do
 	then
 		echo "no dropbox executable found in $dir"
 	else
-		# check if in the fake home directory there is .Xauthority file
-		if [ ! -f $dir/.Xauthority ] 
-		then
-			ln -s "$HOME/.Xauthority" "$dir" 2> /dev/null
-			echo "no .Xauthority file found in $dir"
-		else
-			HOME=$(realpath "$dir") $dir/.dropbox-dist/dropboxd 2>/dev/null &
-			
-		fi	
+		HOME=$(realpath "$dir") $dir/.dropbox-dist/dropboxd 2>/dev/null &		
 	fi
 done
 
