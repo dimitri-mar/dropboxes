@@ -3,8 +3,7 @@ bash scripts for running multiple Dropbox instances in Linux
 
 The scripts download and copy the last version of Dropbox into a set of directories and then allow to execute them simultaneously.
 
-Scripts are inspired by the [Arch linux wiki](https://wiki.archlinux.org/index.php/Dropbox#Multiple_Dropbox_instances)
-and the [Dropbox wiki](http://www.dropboxwiki.com/tips-and-tricks/run-multiple-instances-of-dropbox-simultaneously-on-linux-or-mac-os-x#On_Ubuntu)
+Scripts are inspired by the [Arch linux wiki](https://wiki.archlinux.org/index.php/Dropbox#Multiple_Dropbox_instances), the [Dropbox wiki](http://www.dropboxwiki.com/tips-and-tricks/run-multiple-instances-of-dropbox-simultaneously-on-linux-or-mac-os-x#On_Ubuntu)
 and the official [Dropbox official install page](https://www.dropbox.com/en/install).
 
 NOTE: it works only for Linux x86_64 (for different situations change url in `init_dropbox_dir.sh`) 
